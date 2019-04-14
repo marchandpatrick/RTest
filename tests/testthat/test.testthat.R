@@ -78,7 +78,7 @@ test_that("expect_silent_RTest function warnings works", {
 
 test_that("expect_silent_RTest function warnings works with own quasi comp", {
 
-      options("force_implementation"=FALSE)
+      options("force_implementation"=TRUE)
 
       reporter <- my_reporter()
 

@@ -46,7 +46,7 @@ quasi_capture <- function(quo, capture, label = NULL) {
 
       act <- list()
       `%||%` = rlang::`%||%`
-      act$lab <- label %||% quo_label(quo)
+      act$lab <- deparse(quo) %||% quo_label(quo)
       act$cap <- capture(act$val <- eval_bare( rlang::get_expr(quo), rlang::get_env(quo)))
 
       return(act)
