@@ -1,4 +1,4 @@
-# RTest <img src="inst/images/RTest.png" align="right" />
+# RTest <img src="images/RTest.png" align="right" />
 
 [![Build Status](https://travis-ci.org/zappingseb/RTest.svg?branch=master)](https://travis-ci.org/zappingseb/RTest)
 [![codecov](https://codecov.io/gh/zappingseb/RTest/branch/master/graph/badge.svg)](https://codecov.io/gh/zappingseb/RTest)
@@ -13,7 +13,7 @@ This provides a framework for R packages developed for a regulatory environment.
 # Features #
 
 **Main features**
-* Human readible tests - `XML` based - [example](https://github.com/zappingseb/RTest/blob/master/inst/xml-templates/RTest_TC-generic.xml)
+* Human readible tests - `XML` based - [example](https://github.com/zappingseb/RTest/blob/master/xml-templates/RTest_TC-generic.xml)
 * Human readible test reports - `html` websites [example](https://zappingseb.github.io/RTest/articles/RTest_TC-generic_result.html)
 * High code coverage - [codecov](https://codecov.io/gh/zappingseb/RTest)
 
@@ -73,14 +73,14 @@ vignette("RTest",package="RTest")
 
 ### 2 Work your way through a basic test setup
 
-The easiest way to start with RTest is to clone this repository and especially the [`xml-templates`](https://github.com/zappingseb/RTest/tree/master/inst/xml-templates) folder. There you can find some basic test cases that work without creating a test-adpater. See the figure below to know what this means:
+The easiest way to start with RTest is to clone this repository and especially the [`xml-templates`](https://github.com/zappingseb/RTest/tree/master/xml-templates) folder. There you can find some basic test cases that work without creating a test-adpater. See the figure below to know what this means:
 
 ![RTest general principle](vignettes/general_principle.jpg)
 
 So what RTest basically does, is allowing you to specify R-function calls and testthat calls inside XML files. Of course it
 also executes the tests and hands back a pretty nice report.
 
-A basic example of such an XML based test is [`RTest_TC-generic.xml`](https://github.com/zappingseb/RTest/blob/master/inst/xml-templates/RTest_TC-generic.xml). It calls the functions
+A basic example of such an XML based test is [`RTest_TC-generic.xml`](https://github.com/zappingseb/RTest/blob/master/xml-templates/RTest_TC-generic.xml). It calls the functions
 
 * example_data_frame 
 * example_image 
@@ -115,7 +115,7 @@ example_variable <- function(x=1.2,y=1){
 If you now run the following code inside your clone of this repo:
 
 ```r
-RTest.execute("./inst/xml-templates", f.pattern="RTest_TC-generic.xml")
+RTest.execute("./xml-templates", f.pattern="RTest_TC-generic.xml")
 ```
 
 an easy to read report will be generated. The full Test report can be found here: https://zappingseb.github.io/RTest/articles/RTest_TC-generic_result.html
