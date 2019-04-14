@@ -1,5 +1,5 @@
 Package: RTest
-Version: 1.2.3.1000
+Version: 1.2.4
 Date: 2019-01-02
 Title: A XML-Based Testing Framework for Automated Component Tests of R
         Packages
@@ -11,12 +11,12 @@ Authors@R: c(
     )
 Depends: R (>= 3.1.3), testthat (>= 2.0.0), magick(>= 1.3), methods, XML
 Imports: base64, jsonlite, rlang, glue, magrittr, stringr, tcltk
-Suggests: 
+Suggests:
     knitr,
     rmarkdown,
     covr
 Description: This provides a framework for R packages developed for
-	a regulatory environment. It is based on the 'testthat' unit testing system and provides the adapter
+  a regulatory environment. It is based on the 'testthat' unit testing system and provides the adapter
     functionalities for XML-based test case definition as well as for standardized
     reporting of the test results.
 Collate: RTest-package.R utils.R utils.examples.R utils.test.R
