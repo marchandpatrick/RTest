@@ -63,6 +63,10 @@ matrix:
         local-dir: docs
         on:
           branch: master
+  - r: devel
+    script:
+      - R CMD build . --compact-vignettes=gs+qpdf
+      - xvfb-run R CMD check *tar.gz --as-cran
   - r: release
     os: osx
     osx_image: xcode8
