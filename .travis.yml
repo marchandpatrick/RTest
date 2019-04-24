@@ -12,7 +12,6 @@ pandoc_version: 1.19.2.1
 r_github_packages:
   - r-lib/covr
   - r-lib/pkgdown
-  - r-lib/testthat
 
 addons:
   apt:
