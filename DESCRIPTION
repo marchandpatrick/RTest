@@ -1,6 +1,6 @@
 Package: RTest
 Version: 1.2.4
-Date: 2019-01-02
+Date: 2019-04-24
 Title: A XML-Based Testing Framework for Automated Component Tests of R
         Packages
 Authors@R: c(
@@ -28,7 +28,6 @@ VignetteBuilder: knitr
 License: GPL (>= 2)
 RoxygenNote: 6.1.1
 NeedsCompilation: no
-Packaged: 2018-12-11 11:30:41 UTC; news
 Author: Sebastian Wolf [aut, cre],
   Matthias Pfeifer [aut, ctb],
   Sergej Potapov [ctb],
@@ -36,4 +35,3 @@ Author: Sebastian Wolf [aut, cre],
 Maintainer: Sebastian Wolf <sebastian@mail-wolf.de>
 BugReports: https://github.com/zappingseb/RTest/issues
 Repository: CRAN
-Date/Publication: 2018-12-14 17:30:03 UTC
