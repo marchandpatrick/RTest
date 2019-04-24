@@ -79,7 +79,7 @@
     
 <div id="rtest" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
-<a href="#rtest" class="anchor"></a>RTest <img src="inst/images/RTest.png" align="right">
+<a href="#rtest" class="anchor"></a>RTest <img src="images/RTest.png" align="right">
 </h1></div>
 
 <p>A XML-Based Testing Framework for Automated Component Tests of R Packages</p>
@@ -90,7 +90,7 @@
 <a href="#features" class="anchor"></a>Features</h1>
 <p><strong>Main features</strong></p>
 <ul>
-<li>Human readible tests - <code>XML</code> based - <a href="https://github.com/zappingseb/RTest/blob/master/inst/xml-templates/RTest_TC-generic.xml">example</a>
+<li>Human readible tests - <code>XML</code> based - <a href="https://github.com/zappingseb/RTest/blob/master/xml-templates/RTest_TC-generic.xml">example</a>
 </li>
 <li>Human readible test reports - <code>html</code> websites <a href="https://zappingseb.github.io/RTest/articles/RTest_TC-generic_result.html">example</a>
 </li>
@@ -144,10 +144,10 @@ vignette("RTest",package="RTest")</code></pre>
 <div id="work-your-way-through-a-basic-test-setup" class="section level3">
 <h3 class="hasAnchor">
 <a href="#work-your-way-through-a-basic-test-setup" class="anchor"></a>2 Work your way through a basic test setup</h3>
-<p>The easiest way to start with RTest is to clone this repository and especially the <a href="https://github.com/zappingseb/RTest/tree/master/inst/xml-templates"><code>xml-templates</code></a> folder. There you can find some basic test cases that work without creating a test-adpater. See the figure below to know what this means:</p>
+<p>The easiest way to start with RTest is to clone this repository and especially the <a href="https://github.com/zappingseb/RTest/tree/master/xml-templates"><code>xml-templates</code></a> folder. There you can find some basic test cases that work without creating a test-adpater. See the figure below to know what this means:</p>
 <p><img src="articles/general_principle.jpg" alt="RTest general principle"></p>
 <p>So what RTest basically does, is allowing you to specify R-function calls and testthat calls inside XML files. Of course it also executes the tests and hands back a pretty nice report.</p>
-<p>A basic example of such an XML based test is <a href="https://github.com/zappingseb/RTest/blob/master/inst/xml-templates/RTest_TC-generic.xml"><code>RTest_TC-generic.xml</code></a>. It calls the functions</p>
+<p>A basic example of such an XML based test is <a href="https://github.com/zappingseb/RTest/blob/master/xml-templates/RTest_TC-generic.xml"><code>RTest_TC-generic.xml</code></a>. It calls the functions</p>
 <ul>
 <li>example_data_frame</li>
 <li>example_image</li>
@@ -171,7 +171,7 @@ vignette("RTest",package="RTest")</code></pre>
 <a class="sourceLine" id="cb5-2" data-line-number="2">    (x<span class="op">-</span>y)<span class="op">/</span>(x)</a>
 <a class="sourceLine" id="cb5-3" data-line-number="3">}</a></code></pre></div>
 <p>If you now run the following code inside your clone of this repo:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw"><a href="reference/RTest.execute.html">RTest.execute</a></span>(<span class="st">"./inst/xml-templates"</span>, <span class="dt">f.pattern=</span><span class="st">"RTest_TC-generic.xml"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw"><a href="reference/RTest.execute.html">RTest.execute</a></span>(<span class="st">"./xml-templates"</span>, <span class="dt">f.pattern=</span><span class="st">"RTest_TC-generic.xml"</span>)</a></code></pre></div>
 <p>an easy to read report will be generated. The full Test report can be found here: <a href="https://zappingseb.github.io/RTest/articles/RTest_TC-generic_result.html" class="uri">https://zappingseb.github.io/RTest/articles/RTest_TC-generic_result.html</a></p>
 <p>But the major point is the variable report output which looks like this:</p>
 <p><img src="articles/example_variable.jpg" alt="Variable test report example"></p>
